@@ -1,5 +1,6 @@
 # SSH
-alias sshto="./bashscripts/sshtoserver.sh"
+SCRIPT_DIR=$(dirname "$(realpath "$0")")
+alias sshto="$SCRIPT_DIR/bashscripts/sshtoserver.sh"
 
 # Random Number Generation
 ## Potentially Blocking True Random
