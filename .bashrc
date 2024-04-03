@@ -1,5 +1,10 @@
-# SSH
-SCRIPT_DIR=$(dirname "$(realpath "$0")")
+## Prompt Styling
+PS1='\[\033[01;33m\]$(date "+%Y-%m-%d %H:%M:%S") \[\033[01;32m\]\u@\h \[\033[01;34m\]\w$(if [[ $? == 0 ]]; then echo "\[\033[01;32m\]✔"; else echo "\[\033[01;31m\]✘"; fi)\n\[\033[01;37m\]$(if [ $(id -u) -eq 0 ]; then echo "\[\033[01;31m\]#"; else echo "\[\033[01;32m\]$"; fi) \[\033[00m\]'
+
+## SSH 
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pw
+
+
 alias sshto="$SCRIPT_DIR/bashscripts/sshtoserver.sh"
 
 # Random Number Generation
