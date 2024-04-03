@@ -1,5 +1,5 @@
 # SSH
-alias sshto="bashscripts/sshtoserver.sh"
+alias sshto="./bashscripts/sshtoserver.sh"
 
 # Random Number Generation
 ## Potentially Blocking True Random
@@ -20,7 +20,6 @@ urandom() {
 }
 
 # Networking
-
 ## Get IP Address
 function getip() {
     if [[ $1 == "loc" ]]; then
@@ -39,3 +38,11 @@ function getip() {
         echo "Please specify 'loc' or 'pub' as the first argument."
     fi
 }
+
+
+## Quality if Life
+
+# some ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
