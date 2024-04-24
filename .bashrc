@@ -52,3 +52,9 @@ function getip() {
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
+
+# make dir and cd into it
+mkcd() {
+    mkdir -p "$1" && cd "$1"
+}
